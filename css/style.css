@@ -1,5 +1,5 @@
 *{
-    color: azure;
+    color: whitesmoke;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,12 +9,37 @@ body{
     background: white;
 }
 
-#gridmeny{
+header{
+    grid-area: he;
+    background:lightblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+h2{
+    background-color: pink;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#grid_index{
+    display: grid;
+    grid-template-areas: 
+    "hr hr hr hr";
+}
+
+
+
+#grid_meny{
     display: grid;
     height: 100vh;
-    gap: 2px;
+    gap: 3px;
+    margin: 3px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas: 
     "he he he he"
     "s1 s2 s3 s4"
@@ -22,49 +47,55 @@ body{
     "fo fo fo fo";
 }
 
-#headermeny{
-    grid-area: he;
-    background:black;
-}
-
 .meny{
-  background:black;
+  background:lightblue;
   border-radius: 5px;
 }
 
-#s1{
+#img_meny{
+    height: auto;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+#sec1{
     grid-area: s1;
 }
 
-#s2{
+#sec2{
     grid-area: s2;
 }
 
-#s3{
+#sec3{
     grid-area: s3;
 }
 
-#s4{
+#sec4{
     grid-area: s4;
 }
 
-#s5{
+#sec5{
     grid-area: s5;
 }
 
-#s6{
+#sec6{
     grid-area: s6;
 }
 
-#s7{
+#sec7{
     grid-area: s7;
 }
 
-#s8{
+#sec8{
     grid-area: s8;
 }
 
+
 #footermeny{
     grid-area: fo;
-    background:black; 
+    background:lightblue; 
+    border-radius: 5px;
 }
