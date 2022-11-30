@@ -11,7 +11,7 @@ body{
 
 header{
     grid-area: he;
-    background:lightblue;
+    background:darkgreen;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -27,11 +27,32 @@ h2{
 
 #grid_index{
     display: grid;
+    height: 100vh;
+    background-image: url("../img/Stugan.png");
+    background-size: cover;
+    grid-template-rows: 100px 40px 1fr 50px;
     grid-template-areas: 
-    "hr hr hr hr";
+    "hr hr hr hr"
+    "nv nv nv nv"
+    "ar ar ar ar"
+    "fr fr fr fr";
 }
 
+#index_header{
+    grid-area: hr;
+}
 
+#index_nav{
+    grid-area: nv;
+}
+
+#index_article{
+    grid-area: ar;
+}
+
+#index_footer{
+    grid-area: fr;
+}
 
 #grid_meny{
     display: grid;
