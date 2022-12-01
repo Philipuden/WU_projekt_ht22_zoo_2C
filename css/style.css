@@ -11,11 +11,11 @@ body{
 
 header{
     grid-area: he;
-    background:darkgreen;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     font-size: 40px;
+    color: black;
 }
 
 h2{
@@ -28,26 +28,42 @@ h2{
 #grid_index{
     display: grid;
     height: 100vh;
-    background-image: url("../img/Stugan.png");
+    background-image: url("../img/background.jpg");
     background-size: cover;
-    grid-template-rows: 100px 40px 1fr 50px;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: 
-    "hr hr hr hr"
-    "nv nv nv nv"
-    "ar ar ar ar"
-    "fr fr fr fr";
+    "hr n1 n2"
+    "ar ar ar"
+    "fr fr fr";
 }
 
 #index_header{
     grid-area: hr;
 }
 
-#index_nav{
-    grid-area: nv;
+.nav_start{
+    text-align: center;
+    padding-top: 10px;
+
+}
+.nav_start:hover{
+    
+}
+
+#index_nav1{
+    grid-area: n1;
+    background: black;
+}
+
+#index_nav2{
+    grid-area: n2;
+    background: blue;
 }
 
 #index_article{
     grid-area: ar;
+    background: green;
 }
 
 #index_footer{
@@ -67,12 +83,10 @@ h2{
     "s5 s6 s7 s8"
     "fo fo fo fo";
 }
-
 .meny{
   background:lightblue;
   border-radius: 5px;
 }
-
 #img_meny{
     height: auto;
     width: 50%;
@@ -81,40 +95,30 @@ h2{
     margin-top: 10px;
     display: block;
 }
-
 #sec1{
     grid-area: s1;
 }
-
 #sec2{
     grid-area: s2;
 }
-
 #sec3{
     grid-area: s3;
 }
-
 #sec4{
     grid-area: s4;
 }
-
 #sec5{
     grid-area: s5;
 }
-
 #sec6{
     grid-area: s6;
 }
-
 #sec7{
     grid-area: s7;
 }
-
 #sec8{
     grid-area: s8;
 }
-
-
 #footermeny{
     grid-area: fo;
     background:lightblue; 
