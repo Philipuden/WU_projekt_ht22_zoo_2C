@@ -33,7 +33,7 @@ h2{
     grid-template-rows: 100px 1fr 50px;
     grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: 
-    "hr n1 n2"
+    "hr em nv"
     "ar ar ar"
     "fr fr fr";
 }
@@ -42,32 +42,38 @@ h2{
     grid-area: hr;
 }
 
-.nav_start{
-    text-align: center;
-    padding-top: 10px;
-
+#empty{
+    grid-area: em;
 }
+
 .nav_start:hover{
     
 }
 
-#index_nav1{
-    grid-area: n1;
-    background: black;
-}
-
-#index_nav2{
-    grid-area: n2;
-    background: blue;
+#index_nav{
+    display: flex;
+    grid-area: nv;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
 }
 
 #index_article{
+    display: flex;
     grid-area: ar;
-    background: green;
+    align-items: center;
+    justify-content: center;
 }
 
 #index_footer{
     grid-area: fr;
+    background: rgb(5, 57, 5);
+    color: black;
+}
+
+#button{
+    text-align: center;
 }
 
 #grid_meny{
