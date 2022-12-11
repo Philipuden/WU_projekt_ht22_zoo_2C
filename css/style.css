@@ -6,7 +6,7 @@
 }
 
 body{
-    background: white;
+    background: black;
 }
 
 header{
@@ -19,7 +19,8 @@ header{
 }
 
 h2{
-    background-color: pink;
+    background-image: url("../img/DALL·E\ 2022-12-11\ 17.40.06\ -\ camo.png");
+    background-size: cover;
     padding: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -30,11 +31,12 @@ h2{
     height: 100vh;
     background-image: url("../img/background.jpg");
     background-size: cover;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 100px 1fr 20px 60px;
     grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: 
     "hr em nv"
     "ar ar ar"
+    "bu bu bu"
     "fr fr fr";
 }
 
@@ -60,20 +62,35 @@ h2{
 }
 
 #index_article{
-    display: flex;
     grid-area: ar;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+#button{
+    grid-area: bu;
+    text-align: center;
 }
 
 #index_footer{
     grid-area: fr;
     background: rgb(5, 57, 5);
     color: black;
+    text-align: center;
 }
 
-#button{
-    text-align: center;
+#framsida{
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
+}
+
+#framsida2{
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 25px;
+    background: none;
 }
 
 #grid_meny{
@@ -81,17 +98,20 @@ h2{
     height: 100vh;
     gap: 3px;
     margin: 3px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas: 
-    "he he he he"
-    "s1 s2 s3 s4"
-    "s5 s6 s7 s8"
-    "fo fo fo fo";
+    "he he he"
+    "s1 s2 s3"
+    "s4 s5 s6"
+    "fo fo fo";
 }
 .meny{
-  background:lightblue;
+  background:rgb(24, 70, 24);
   border-radius: 5px;
+  margin-inline: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #img_meny{
     height: auto;
@@ -119,14 +139,7 @@ h2{
 #sec6{
     grid-area: s6;
 }
-#sec7{
-    grid-area: s7;
-}
-#sec8{
-    grid-area: s8;
-}
 #footermeny{
     grid-area: fo;
-    background:lightblue; 
-    border-radius: 5px;
+    background:rgb(82, 80, 80); 
 }
