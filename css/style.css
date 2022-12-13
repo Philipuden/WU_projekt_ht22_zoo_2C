@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background: black;
-}
-
 header{
     grid-area: he;
     border-radius: 5px;
@@ -18,18 +14,12 @@ header{
     color: black;
 }
 
-h2{
-    background-image: url("../img/DALL·E\ 2022-12-11\ 17.40.06\ -\ camo.png");
-    background-size: cover;
-    padding: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-}
+/* --------------------------index/om_oss------------------ */
 
 #grid_index{
     display: grid;
     height: 100vh;
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/backgrounds/background.jpg");
     background-size: cover;
     grid-template-rows: 100px 1fr 20px 60px;
     grid-template-columns: 100px 1fr 1fr;
@@ -44,13 +34,7 @@ h2{
     grid-area: hr;
 }
 
-#empty{
-    grid-area: em;
-}
-
-.nav_start:hover{
-    
-}
+#tom{ grid-area: em;}
 
 #index_nav{
     display: flex;
@@ -61,12 +45,25 @@ h2{
     font-size: larger;
 }
 
+.nav_start:hover{
+    
+}
+
 #index_article{
     grid-area: ar;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+
+.framsida{
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#h1framsida{ font-size: 40px;}
+#h2framsida{ font-size: 25px;}
+#pframsida{ font-size: 10px;}
 
 #button{
     grid-area: bu;
@@ -80,66 +77,87 @@ h2{
     text-align: center;
 }
 
-#framsida{
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 40px;
-}
-
-#framsida2{
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 25px;
-    background: none;
-}
+/* -------------------------------------------------Meny------------------------------------------------------------------- */
 
 #grid_meny{
     display: grid;
+    background-image: url("../img/backgrounds/patrick-fore-bg20VZvrfvY-unsplash.jpg");
+    background-size: cover;
     height: 100vh;
-    gap: 3px;
-    margin: 3px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 50px;
     grid-template-areas: 
-    "he he he"
+    "he"
+    "ko"
+    "fo";
+}
+#kontainer{
+    grid-area: ko;
+    display: grid;
+    grid-template-areas: 
     "s1 s2 s3"
-    "s4 s5 s6"
-    "fo fo fo";
+    "s4 s5 s6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  
 }
+
 .meny{
-  background:rgb(24, 70, 24);
-  border-radius: 5px;
-  margin-inline: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  margin: 0;
 }
-#img_meny{
-    height: auto;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
-    display: block;
-}
+
 #sec1{
     grid-area: s1;
+    background-image: url("../img/food/köttbullepizza.jpg");
+    background-size: cover;
+    
 }
 #sec2{
     grid-area: s2;
+    background-image: url("../img/food/älgkebab.jpg");
+    background-size: cover;
 }
 #sec3{
     grid-area: s3;
+    background-image: url("../img/food/nedladdning.jpg");
+    background-size: cover;
 }
 #sec4{
     grid-area: s4;
+    background-image: url("../img/food/Oxjärp.jpg");
+    background-size: cover;
 }
 #sec5{
     grid-area: s5;
+    background-image: url("../img/food/raggmunk.jpg");
+    background-size: cover;
 }
 #sec6{
     grid-area: s6;
+    background-image: url("../img/food/ceasar.jpg");
+    background-size: cover;
 }
+
+.osynlig{
+    opacity: 0%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.osynlig:hover{
+    opacity: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
 #footermeny{
     grid-area: fo;
-    background:rgb(82, 80, 80); 
+    text-align: center;
 }
+
+/* ------------------ */
+
