@@ -1,4 +1,4 @@
-var button = document.getElementById('button');
+var button = document.getElementById('knapp');
 
 button.onclick = function() {
     var div = document.getElementById('index_footer');

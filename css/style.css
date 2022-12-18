@@ -45,10 +45,6 @@ header{
     font-size: larger;
 }
 
-.nav_start:hover{
-    
-}
-
 #index_article{
     grid-area: ar;
     align-items: center;
@@ -65,7 +61,7 @@ header{
 #h2framsida{ font-size: 25px;}
 #pframsida{ font-size: 10px;}
 
-#button{
+#knapp{
     grid-area: bu;
     text-align: center;
 }
@@ -92,15 +88,12 @@ header{
 }
 #kontainer{
     grid-area: ko;
-    display: grid;
-    grid-template-areas: 
-    "s1 s2 s3"
-    "s4 s5 s6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     justify-items: center;
-  
+    gap: 50px;
 }
 
 .meny{
@@ -112,28 +105,28 @@ header{
 
 #sec1{
     grid-area: s1;
-    background-image: url("../img/food/köttbullepizza.jpg");
+    background-image: url("../img/food/sahal-hameed-Nq9KlQTTEbQ-unsplash.jpg");
     background-size: cover;
     
 }
 #sec2{
     grid-area: s2;
-    background-image: url("../img/food/älgkebab.jpg");
+    background-image: url("../img/food/alexander-mils-SNLfVYmL8os-unsplash.jpg");
     background-size: cover;
 }
 #sec3{
     grid-area: s3;
-    background-image: url("../img/food/nedladdning.jpg");
+    background-image: url("../img/food/sanket-shah-eEWlcfydzQ4-unsplash.jpg");
     background-size: cover;
 }
 #sec4{
     grid-area: s4;
-    background-image: url("../img/food/Oxjärp.jpg");
+    background-image: url("../img/food/victoria-shes-8pK37xtN4bo-unsplash.jpg");
     background-size: cover;
 }
 #sec5{
     grid-area: s5;
-    background-image: url("../img/food/raggmunk.jpg");
+    background-image: url("../img/food/raggmunk.jfif");
     background-size: cover;
 }
 #sec6{
