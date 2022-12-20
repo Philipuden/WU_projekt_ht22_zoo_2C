@@ -5,13 +5,42 @@
     box-sizing: border-box;
 }
 
-header{
-    grid-area: he;
-    border-radius: 5px;
+.logga{
+    grid-area: lo;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+}
+
+nav{
+    display: flex;
+    grid-area: nv;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+footer{
+    grid-area: fr;
+    display: flex;
+    background: rgb(5, 57, 5);
     color: black;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    padding: 3px;
+    outline: solid 1px;
+    outline-color: white;
+}
+
+.knapp{
+    grid-area: kn;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
 }
 
 /* --------------------------index/om_oss------------------ */
@@ -24,14 +53,11 @@ header{
     grid-template-rows: 100px 1fr 20px 60px;
     grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: 
-    "hr em nv"
+    "lo em nv"
     "ar ar ar"
-    "bu bu bu"
+    "kn kn kn"
     "fr fr fr";
-}
-
-#index_header{
-    grid-area: hr;
+    position: relative;
 }
 
 #tom{ grid-area: em;}
@@ -61,15 +87,40 @@ header{
 #h2framsida{ font-size: 25px;}
 #pframsida{ font-size: 10px;}
 
-#knapp{
-    grid-area: bu;
-    text-align: center;
+
+/* ------------------------------------------------Om oss---------------------------------------- */
+
+#article_om_oss{
+    grid-area: ar;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "bt vg";
+    grid-template-columns: 1fr 1fr;
 }
 
-#index_footer{
-    grid-area: fr;
-    background: rgb(5, 57, 5);
-    color: black;
+#kontainer_om_oss{
+    padding: 30px 30px 30px 70px;
+    grid-area: bt;
+    width: 600px;
+    height: 400px;
+}
+
+#bröd_text_om_oss{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#våra_guider_om_oss{
+    grid-area: vg;
     text-align: center;
 }
 
@@ -77,14 +128,20 @@ header{
 
 #grid_meny{
     display: grid;
-    background-image: url("../img/backgrounds/patrick-fore-bg20VZvrfvY-unsplash.jpg");
+    background: url("../img/backgrounds/rex-pickar-zUmQH_rI2kg-unsplash.jpg");
     background-size: cover;
     height: 100vh;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 100px 1fr 20px 60px;
+    grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: 
-    "he"
-    "ko"
-    "fo";
+    "lo ti nv"
+    "ko ko ko"
+    "kn kn kn"
+    "fr fr fr";
+}
+#headermeny{ grid-area: he;}
+#titel_restaurang{
+    grid-area: ti;
 }
 #kontainer{
     grid-area: ko;
@@ -101,6 +158,8 @@ header{
   width: 300px;
   height: 200px;
   margin: 0;
+  background: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
 }
 
 #sec1{
@@ -152,5 +211,5 @@ header{
     text-align: center;
 }
 
-/* ------------------ */
+/* ------------------*/
 

@@ -4,8 +4,12 @@ button.onclick = function() {
     var div = document.getElementById('index_footer');
 if (div.style.display !== 'none') {
     div.style.display = 'none';
+    button.style.top = '60px';
+    button.style.rotate = '180deg';
 }
 else {
-    div.style.display = 'block';
+    div.style.display = 'flex';
+    button.style.top = '0px';
+    button.style.rotate = '0deg';     
 }
 };
