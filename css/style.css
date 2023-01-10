@@ -22,7 +22,7 @@ nav{
     font-size: larger;
 }
 
-footer{
+.footers{
     grid-area: fr;
     display: flex;
     background: rgb(5, 57, 5);
@@ -124,6 +124,11 @@ footer{
     text-align: center;
 }
 
+#guide_img{
+    height: 450px;
+    width: auto;
+}
+
 /* -------------------------------------------------Meny------------------------------------------------------------------- */
 
 #grid_meny{
@@ -138,10 +143,13 @@ footer{
     "ko ko ko"
     "kn kn kn"
     "fr fr fr";
+    position: relative;
 }
 #headermeny{ grid-area: he;}
 #titel_restaurang{
     grid-area: ti;
+    font-size: 70px;
+    padding-left: 20px;
 }
 #kontainer{
     grid-area: ko;
@@ -150,7 +158,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
-    gap: 50px;
+    margin: 0px 50px 0px 50px;
 }
 
 .meny{

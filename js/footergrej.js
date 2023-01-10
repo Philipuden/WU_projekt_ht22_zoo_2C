@@ -1,7 +1,7 @@
 var button = document.getElementById('knapp');
 
 button.onclick = function() {
-    var div = document.getElementById('index_footer');
+    var div = document.getElementsByClassName('footer');
 if (div.style.display !== 'none') {
     div.style.display = 'none';
     button.style.top = '60px';
